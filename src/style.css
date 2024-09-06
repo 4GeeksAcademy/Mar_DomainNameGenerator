@@ -14,4 +14,6 @@ h1 {
   align-items: center;
   text-align: center;
   font-size: 4rem;
+  height: 60%;
+  margin-top: -350px;
 }

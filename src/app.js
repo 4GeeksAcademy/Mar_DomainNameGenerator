@@ -7,36 +7,36 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   let syllables1 = [
-    "ba",
-    "ca",
-    "da",
-    "fa",
-    "ga",
-    "ha",
-    "ja",
-    "ka",
-    "la",
-    "ma",
-    "na",
-    "pa",
-    "ra",
-    "sa",
-    "ta",
-    "va",
-    "wa",
-    "ya",
-    "za",
-    "sha",
-    "cha",
-    "tha",
-    "bra",
-    "kra",
-    "tra",
-    "pla",
-    "fra",
-    "gra",
-    "sma",
-    "spa"
+    "Ba",
+    "Ca",
+    "Da",
+    "Fa",
+    "Ga",
+    "Ha",
+    "Ja",
+    "Ka",
+    "La",
+    "Ma",
+    "Na",
+    "Pa",
+    "Ra",
+    "Sa",
+    "Ta",
+    "Va",
+    "Wa",
+    "Ya",
+    "Za",
+    "Sha",
+    "Cha",
+    "Tha",
+    "Bra",
+    "Kra",
+    "Tra",
+    "Pla",
+    "Fra",
+    "Gra",
+    "Sma",
+    "Spa"
   ];
   let syllables2 = [
     "ab",
@@ -118,7 +118,13 @@ window.onload = function() {
     // Display the generated word
     document.getElementById("generatedWord").innerText = word;
   }
-
+  for (let first of syllables1) {
+    for (let second of syllables2) {
+      for (let third of syllables3) {
+        console.log(first + second + third);
+      }
+    }
+  }
   // Event listener to the button
   document
     .getElementById("generateButton")
